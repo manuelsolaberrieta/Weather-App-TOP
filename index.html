@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header><h1>Weather report!</h1></header>
+      <div class="search-form">
+        <label for="location"
+          >Enter Location:
+          <span class="tooltip"
+            >(i)
+            <p class="tooltiptext">
+              info: You can put the location name plus a comma and the first two
+              letters of the country to aid your search. e.g:(London,GB)
+            </p></span
+          ></label
+        >
+        <input type="text" name="location" id="location" />
+        <button id="process">Send</button>
+      </div>
+      <h2 id="search-results">Results for your search:</h2>
+      <div class="resultado"></div>
+    </main>
+    <div class="resultados"></div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
