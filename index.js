@@ -23,7 +23,7 @@ function showResults(arr) {
 
 async function getApiLocations(location) {
   const data = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${appid}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${appid}`
   );
   let results = await data.json();
   showResults(results);
